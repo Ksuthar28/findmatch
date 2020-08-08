@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="button_height">30dp</dimen>
+    <dimen name="recycler_padding">8dp</dimen>
+    <dimen name="card_radius">4dp</dimen>
+    <dimen name="car_elevation">3dp</dimen>
+    <dimen name="card_padding">8dp</dimen>
+    <dimen name="thumbnail_height">130dp</dimen>
+    <dimen name="thumbnail_width">110dp</dimen>
+    <dimen name="thumbnail_padding">10dp</dimen>
+    <dimen name="drawable_padding">6dp</dimen>
+    <dimen name="padding_1">1dp</dimen>
+    <dimen name="padding_2">2dp</dimen>
+    <dimen name="padding_4">4dp</dimen>
+    <dimen name="padding_6">6dp</dimen>
+    <dimen name="padding_8">8dp</dimen>
+    <dimen name="padding_10">10dp</dimen>
+    <dimen name="padding_16">16dp</dimen>
+
+    <dimen name="text_size_title">20sp</dimen>
+    <dimen name="text_size_description">18sp</dimen>
+    <dimen name="text_size_button">16sp</dimen>
+
+</resources>

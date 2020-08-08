@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    card_view:background="@color/colorWhite"
+    card_view:cardCornerRadius="@dimen/card_radius"
+    card_view:cardElevation="@dimen/car_elevation"
+    card_view:cardUseCompatPadding="true">
+
+    <ImageView
+        android:id="@+id/imageThumbnail"
+        android:layout_width="@dimen/thumbnail_width"
+        android:layout_height="@dimen/thumbnail_height"
+        android:contentDescription="@string/image_description"
+        android:scaleType="fitXY"
+        android:src="@drawable/placeholder" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/thumbnail_width"
+        android:padding="@dimen/card_padding">
+
+        <TextView
+            android:id="@+id/textViewName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:hint="@string/full_name"
+            android:textColor="@color/colorTextDark"
+            android:textSize="@dimen/text_size_title" />
+
+        <TextView
+            android:id="@+id/textViewAge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textViewName"
+            android:maxLines="1"
+            android:hint="@string/age_gender"
+            android:textSize="@dimen/text_size_description" />
+
+        <TextView
+            android:id="@+id/textViewLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textViewAge"
+            android:maxLines="1"
+            android:text="@string/location"
+            android:textSize="@dimen/text_size_description" />
+
+        <LinearLayout
+            android:id="@+id/actionView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textViewLocation"
+            android:layout_marginTop="@dimen/padding_6"
+            android:orientation="horizontal"
+            android:visibility="visible"
+            android:weightSum="1">
+
+            <Button
+                android:id="@+id/buttonAccept"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/button_height"
+                android:layout_marginEnd="@dimen/padding_4"
+                android:layout_weight="0.5"
+                android:background="@drawable/button_selector_accept"
+                android:drawableStart="@drawable/accept_icon"
+                android:paddingStart="@dimen/padding_6"
+                android:paddingEnd="@dimen/padding_10"
+                android:text="@string/accept"
+                android:textAllCaps="false"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/text_size_button" />
+
+            <Button
+                android:id="@+id/buttonDecline"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/button_height"
+                android:layout_marginStart="@dimen/padding_4"
+                android:layout_weight="0.5"
+                android:background="@drawable/button_selector_decline"
+                android:drawableStart="@drawable/decline_icon"
+                android:paddingStart="@dimen/padding_6"
+                android:paddingEnd="@dimen/padding_10"
+                android:text="@string/decline"
+                android:textAllCaps="false"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/text_size_button" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textViewStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/actionView"
+            android:layout_marginTop="@dimen/padding_8"
+            android:maxLines="1"
+            android:hint="@string/status_accepted"
+            android:textColor="@color/colorGreen"
+            android:textStyle="bold"
+            android:textSize="@dimen/text_size_description"
+            android:visibility="gone"/>
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Find Match</string>
+    <string name="image_description">Image Description</string>
+    <string name="full_name">Mr. Full Name</string>
+    <string name="age_gender">53 - Male</string>
+    <string name="location">Mambai, India</string>
+    <string name="status_accepted">Member Accepted</string>
+    <string name="status_declined">Member Declined</string>
+    <string name="decline">Decline</string>
+    <string name="accept">Accept</string>
+    <string name="loading">Loading...</string>
+</resources>
