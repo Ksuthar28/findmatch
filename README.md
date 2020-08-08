@@ -1,2 +1,2 @@
 # findmatch
-Sample project to find match like Saadi
+Sample project to find match like Shaadi
